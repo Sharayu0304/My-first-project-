@@ -20,7 +20,8 @@ def cart_index(id):
 def add_items(id , quantity):
     p = find_product(id)
     if not p or quantity<=0:
-        print("The id or quantity is invalid."); return
+        print("The id or quantity is invalid."); 
+        return
     i = cart_index(id)
     if i is None:
         cart.append({"id":p[0], "name":p[1], "price":p[2], "quantity" : quantity})
@@ -47,7 +48,7 @@ def update_item(id, quantity):
         return
     cart[i]["quantity"]= quantity
     print("Done")
-        
+           
 def delete_item(id):
     i = cart_index(id)
     if i is None:
@@ -58,10 +59,14 @@ def delete_item(id):
 def total_amount():
     return sum(it["price"]*it["quantity"] for it in cart)
     
-def apply_discount(total , codes):
-    codes = {"FLASH65", "STUDENT5", "NEWCOMER10",}
-    d = total*codes/100
-    return total - d, d
+def apply_discount(total , code):
+    codes = {"FLASH65": 65, "STUDENT5": 5, "NEWCOMER10": 10,}
+    c = (code or "").strip().upper()
+    if c in codes:
+        discount = total * codes[c]/100
+        return total - discount, discount
+    return total, 0.0
+
 
 def read_int(prompt):
     try:
@@ -93,12 +98,15 @@ def main():
             if not cart: continue
             total = total_amount(); 
             print("Subtotal:",)
-            code = input("Apply Code (OR Press Enter to Skip):")
-            final, discount = apply_discount(total, code)
+            print("Codes are 'FLASH65', 'STUDENT5', 'NEWCOMER10'")
+            codes = input("Code (ENTER to skip):").strip()
+            final, discount = apply_discount(total, codes)
             if discount>0:
                 print("Discount:", int(discount))
                 print("Final:", int(final))
-                print("Thank You"); break
+                print("Thank You"); 
+            else:
+                print("No discount applied")
         elif choice==7:
             cart.clear(); print("Cleared")
         elif choice==8:
