@@ -47,7 +47,7 @@ def update_item(id, quantity):
         return
     cart[i]["quantity"]= quantity
     print("Done")
-        
+           
 def delete_item(id):
     i = cart_index(id)
     if i is None:
