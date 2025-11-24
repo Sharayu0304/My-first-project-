@@ -104,13 +104,14 @@ def main():
             if discount>0:
                 print("Discount:", int(discount))
                 print("Final:", int(final))
-                print("Thank You"); 
+                print("Thank You")
             else:
                 print("No discount applied")
         elif choice==7:
             cart.clear(); print("Cleared")
         elif choice==8:
-            print("Exit"); break
+            print("Exit")
+            break
         else:
             print("Invalid")
 if __name__== "__main__" :
