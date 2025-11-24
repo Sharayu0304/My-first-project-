@@ -1,7 +1,7 @@
 # My-first-project-
 <br>
-PROJECT TITLE
-Online Shopping Cart Simulation<br>
+# VITyarthi Project
+## **Online Shopping Cart Simulation**<br>
 <br>
 OVERVIEW OF THE PROJECT:
 This Python command line project allows the user to browse, add,update, delete the items in this shopping cart. They are also provided with discounts at the checkout. The checkout page estimates and provides the total bill after applying the discount code.
