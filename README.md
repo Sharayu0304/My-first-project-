@@ -25,7 +25,8 @@ User can specify or modify the number of products he/she wished to add in the ca
 5. VIEWING CART ITEMS: It displays all the products that you have selected for purchase. It also shows the product's ID number, quantiity and subtotal per item. ![WhatsApp Image 2025-11-24 at 15 52 34_1e0dd1a8](https://github.com/user-attachments/assets/3c624a98-599e-4733-81a0-1d82c3a4b0ca)
 
 
-6. DISCOUNT CODES : The shopping simulation allows the users to apply discount codes or coupons at the checkout with predefined discounts included such as - 'FLASH65' and 'STUDENT5'. This means it will provide a discount rate of 65 and 5 percent respectively. It will not allow any other codes other that the predefined codes to get applied.
+6. DISCOUNT CODES : The shopping simulation allows the users to apply discount codes or coupons at the checkout with predefined discounts included such as - 'FLASH65' and 'STUDENT5'. This means it will provide a discount rate of 65 and 5 percent respectively. It will not allow any other codes other that the predefined codes to get applied. <img width="940" height="625" alt="image" src="https://github.com/user-attachments/assets/9dd5823d-d727-49b9-bcae-85e4e0c6aa8c" />
+
 
 7. CLEARING CART : Users can remove all the items from the cart, thus making it empty. ![WhatsApp Image 2025-11-24 at 16 03 44_32a9766e](https://github.com/user-attachments/assets/c238c482-025b-40f1-8a08-2a355d30ffbb)
 
